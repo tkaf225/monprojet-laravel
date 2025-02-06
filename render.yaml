@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: monprojet-laravel
+    env: php
+    plan: free
+    buildCommand: "composer install"
+    startCommand: "php artisan serve --host=0.0.0.0"
+    branches:
+      - main
